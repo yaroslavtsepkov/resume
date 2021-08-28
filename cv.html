@@ -10,7 +10,7 @@
             <h1>Цепков Ярослав Алексеевич</h1>
         </div>
         <div class="professional-name-header">
-            <h2>Data scinetist</h2>
+            <b>Data Scientist</b>
         </div>
         <div class="grid-contacts">
             <div class="email">
@@ -27,9 +27,39 @@
             </div>
         </div>
     </div>
+    <!-- Education -->
+
+    <div class="education">
+        <!-- Master -->
+        <h2>Образование</h2>
+        <div class="university-name">
+            Самарский университет
+        </div>
+        </div class="degree">
+            Магистр
+        </div>
+        <div class="specialisation">
+            Факультет информатики. Прикладная математика и информатика.
+            Разработка интелектуальных систем. 
+        </div>
+
+        <!-- Bachelor -->
+        <div class="university-name">
+            Самарский университет
+        </div>
+        </div class="degree">
+            Бакалавр
+        </div>
+        <div class="specialisation">
+            Факультет математики. Прикладная математика и информатика.
+            Системный анализ. 
+        </div>
+    </div>
 
     <!-- Experience CV -->
     <div class="grid-experience">
+        <h2>Опыт работы</h2>
+        <!-- Сбербанк -->
         <div class=experience-name-work>
             <h3>Сбербанк</h3>
         </div>
@@ -43,8 +73,127 @@
             <p id=start-date>2020-03-13</p>
             <p id=end-date>2021-08-26</p>
         </div>
-        <div class="work-body">
+        <div class="container-body-list">
+            <ul>
+                <li>Выгрузки данных из различных источников с использование различных диалектов SQL</li>
+                <li>Очистка и маскирование данных с использованием regex и расстояния Ливенштейна</li>
+                <li>Проведение анализа с использованием графовой теории. Построение графов связей и процессов с использованием Gephi, networkx, SberPM</li>
+                <li>Исследовательские и продуктовые проекты в области машинного обучения: задачи классификации, кластеризации и поиска аномалий в данных, распознование документов, детекция объектов</li>
+                <li>Написание внутренних библиотек для будущих разработок</li>
+            </ul>
+        </div>
+        <!-- Интегра - С -->
+        <div class=experience-name-work>
+            <h3>Интегра-С</h3>
+        </div>
+        <div class="location-date">
+            Самара
+        </div>
+        <div class="level">
+            Программист
+        </div>
+        <div class=experience-work-date>
+            <p id=start-date>Январь 2020</p>
+            <p id=end-date>Август 2020</p>
+        </div>
+        <div class="container-body-list">
+            <ul>
+                <li>Выявление бизнес требований к приложениям.</li>
+                <li>Помощь в разработке дизайна. Преимущественно работа с векторной графикой.</li>
+                <li>Написание тонкого клиента для мобильных приложений iOS/Android.</li>
+                <li>Работа с REST API, написание документации к ПО.</li>
+                <li>Работа с потоковым видеосигналом RTSP.</li>
+                <li>Поиск оптимальной модели для детекции объектов на видео для серверной части.</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Personal projects -->
+    <div class="project">
+        <!-- BELKA -->
+        <h3>Умный дом</h3>
+        <div class="container-body-list">
+            <p class="introduction">
+                Участие в проекте умный дом в качестве мобильного разработчика мобильного ПО
+            </p>
+            <ul>
+                <li>
+                    Разработка мобильного клиента на iOS, разработка архитектуры базы данных.
+                </li>
+            </ul>
+        </div>
+        <!-- CUDA -->
+        <h3>Высокопроизводительные вычисления</h3>
+        <div class="container-body-list">
+            <p class="introduction">
+                Решение задач линейной алгебры, обработки сигналов с использование технологии <b class="skills">CUDA</b>. Написание статьи на newtechaudit.
+            </p>
+            <ul>
+                <li>Реализация вычислений спектограммы аудиосигнала, сравнение результатов GPU и CPU</li>
+                <li>Вычисления числа pi, анализ результатов</li>
+            </ul>
             
         </div>
+        <!-- Image processing -->
+        <h3>Обработка изображений</h3>
+        <div class="container-body-list">
+            <p class="introduction">
+                Изучение библиотек для работы с изображениями и собственная реализация алгоритмов обработки изображений. Написание двух статей по этой теме на newtechaudit.
+            </p>
+            <ul>
+                <li>Реализация различных типов фильтров и алгоритмов для обработки изображей</li>
+                <li>Реализация функции свертки изображения, аппроксимация изображения поверхностью, фильтрация с оператором Собела</li>
+                <li>Реализация операций математической морфологии, пороговая обработка изображений</li>
+            </ul>
+                
+
+        </div>
+    </div>
+
+    <!-- Key skills -->
+    <div class="skills">
+        <h2>Навыки</h2>
+        <ul>
+            <li>
+                Языки программирования 
+                <b id="skills">
+                    Python,Java,C
+                </b>
+            </li>
+            <li>
+                Работа с данными
+                <b id="skills">
+                    Pandas,Dask,OpenCV,Spark,SQL
+                </b>
+            </li>
+            <li>
+                Машинное обучение
+                <b id="skills">
+                    SciKit ‐ learn,PyTorch,Keras
+                </b>
+            </li>
+            <li>
+                Высокопроизводительные вычисления
+                <b id="skills">
+                    CUDA,Numba,Multiprocessing,Threads
+                </b>
+            </li>
+            <li>
+                Визуализация
+                <b id="skills">
+                    Matplotlib,Seaborn,Plotly,Dash,Altair,NetworkX,Gephi
+                </b>
+            </li>
+            <li>
+                Сетевой стек
+                <b id="skills">
+                    aiohttp,socket,ssl,request,wireshark
+                </b>
+            </li>
+            <li>Остальное
+                <b id="skills">
+                    Linux,Bash,Git,Jira,Markdown,Latex,WolframMatematica,Octave,HTML5,CSS3
+                </b>
+            </li>
+        </ul>
     </div>
 </body>
