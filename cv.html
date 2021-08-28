@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8" content="UTF-8">
+    <title>HTML CV</title>
     <link rel="stylesheet" tyoe="text/css" href="style.css"></link>
 </head>
 
@@ -10,41 +12,183 @@
             <h1>Цепков Ярослав Алексеевич</h1>
         </div>
         <div class="professional-name-header">
-            <h2>Data scinetist</h2>
+            <b>Data Scientist</b>
         </div>
         <div class="grid-contacts">
-            <div class="email">
-                Email: yaroslav.tsepkov@gmail.com
+            <div class="contacts">
+                Email: <a href="mailto:yaroslav.tsepkov@gmail.com">yaroslav.tsepkov@gmail.com</a>   | Phone: +79608243141
             </div>
-            <div class="github">
-                Github: <a href="https://github.com/yaroslavtsepkov">yaroslavtsepkov</a>
-            </div>
-            <div class="telegram">
-                Telegram: <a href="https://t.me/zireaelv">zireaelv</a>
-            </div>
-            <div class="phone">
-                Phone: +79608243141
+            <div class="socials">
+                Github: <a href="https://github.com/yaroslavtsepkov">yaroslavtsepkov</a> | Telegram: <a href="https://t.me/zireaelv">zireaelv</a>
             </div>
         </div>
     </div>
+    <!-- Education -->
 
+    <div class="education">
+        <!-- Master -->
+        <h2>Образование</h2>
+        <div class = "grid-experience">
+            <div class="company">
+                Самарский университет
+            </div>
+            <div class="date">
+                Август 2020 - Август 2022
+            </div>
+        </div>
+        <b class="degree">Магистр</b>
+        <p class="introduction">
+            Факультет информатики.<br/>
+            Прикладная математика и информатика.<br/>
+            Разработка интелектуальных систем. 
+        </p>
+
+        <!-- Bachelor -->
+        <div class = "grid-experience">
+            <div class="company">
+                Самарский университет
+            </div>
+            <div class="date">
+                Август 2016 - Август 2020
+            </div>
+        </div>
+        <b class="degree">Бакалавр</b>
+        <p class="introduction">
+            Факультет математики.<br/>
+            Прикладная математика и информатика.<br/>
+            Системный анализ. 
+        </p>
+    </div>
     <!-- Experience CV -->
-    <div class="grid-experience">
-        <div class=experience-name-work>
-            <h3>Сбербанк</h3>
+    <h2>Опыт работы</h2>
+    <!-- Сбербанк -->
+    <div class = "grid-experience">
+        <div class="company">
+            Cбербанк
         </div>
-        <div class="location-date">
-            Самара
+        <div class="date">
+            Март 2021 - Август 2021
         </div>
-        <div class="level">
-            Старший аудитор
+    </div>
+    <div class="degree">Старший аудитор (Data Scientist)</div>
+    <div class="container-body-list">
+        <ul>
+            <li>Выгрузки данных из различных источников с использование различных диалектов SQL</li>
+            <li>Очистка и маскирование данных с использованием regex и расстояния Ливенштейна</li>
+            <li>Проведение анализа с использованием графовой теории. Построение графов связей и процессов с использованием Gephi, networkx, SberPM</li>
+            <li>Исследовательские и продуктовые проекты в области машинного обучения: задачи классификации, кластеризации и поиска аномалий в данных, распознование документов, детекция объектов</li>
+            <li>Написание внутренних библиотек для будущих разработок</li>
+        </ul>
+        <!-- Интегра - С -->
+        <div class = "grid-experience">
+            <div class="company">
+                Интегра-С
+            </div>
+            <div class="date">
+                Январь 2020 - Август 2020
+            </div>
         </div>
-        <div class=experience-work-date>
-            <p id=start-date>2020-03-13</p>
-            <p id=end-date>2021-08-26</p>
+        <div class="degree">Программист</div>
+        <div class="container-body-list">
+            <ul>
+                <li>Выявление бизнес требований к приложениям.</li>
+                <li>Помощь в разработке дизайна. Преимущественно работа с векторной графикой.</li>
+                <li>Написание тонкого клиента для мобильных приложений iOS/Android.</li>
+                <li>Работа с REST API, написание документации к ПО.</li>
+                <li>Работа с потоковым видеосигналом RTSP.</li>
+                <li>Поиск оптимальной модели для детекции объектов на видео для серверной части.</li>
+            </ul>
         </div>
-        <div class="work-body">
+    </div>
+    <!-- Personal projects -->
+    
+    <div class="project">
+        <!-- BELKA -->
+        <h2>Персональные проекты</h2>
+        <div class="company">Умный дом</div>
+        <div class="container-body-list">
+            <p class="introduction">
+                Участие в проекте умный дом в качестве мобильного разработчика мобильного ПО
+            </p>
+            <ul>
+                <li>
+                    Разработка мобильного клиента на iOS, разработка архитектуры базы данных.
+                </li>
+            </ul>
+        </div>
+        <!-- CUDA -->
+        <div class="company">Высокопроизводительные вычисления</div>
+        <div class="container-body-list">
+            <p class="introduction">
+                Решение задач линейной алгебры, обработки сигналов с использование технологии CUDA. Написание статьи на newtechaudit.
+            </p>
+            <ul>
+                <li>Реализация вычислений спектограммы аудиосигнала, сравнение результатов GPU и CPU</li>
+                <li>Вычисления числа pi, анализ результатов</li>
+            </ul>
             
         </div>
+        <!-- Image processing -->
+        <div class="company">Обработка изображений</div>
+        <div class="container-body-list">
+            <p class="introduction">
+                Изучение библиотек для работы с изображениями и собственная реализация алгоритмов обработки изображений. Написание двух статей по этой теме на newtechaudit.
+            </p>
+            <ul>
+                <li>Реализация различных типов фильтров и алгоритмов для обработки изображей</li>
+                <li>Реализация функции свертки изображения, аппроксимация изображения поверхностью, фильтрация с оператором Собела</li>
+                <li>Реализация операций математической морфологии, пороговая обработка изображений</li>
+            </ul>
+                
+
+        </div>
+    </div>
+
+    <!-- Key skills -->
+    <div class="key">
+        <h2>Навыки</h2>
+        <ul>
+            <li>
+                Языки программирования 
+                <b id="skills">
+                    Python, Java, C
+                </b>
+            </li>
+            <li>
+                Работа с данными
+                <b id="skills">
+                    Pandas, Dask, OpenCV, Spark, SQL
+                </b>
+            </li>
+            <li>
+                Машинное обучение
+                <b id="skills">
+                    SciKit‐learn, PyTorch, Keras
+                </b>
+            </li>
+            <li>
+                Высокопроизводительные вычисления
+                <b id="skills">
+                    CUDA, Numba, Multiprocessing, Threads
+                </b>
+            </li>
+            <li>
+                Визуализация
+                <b id="skills">
+                    Matplotlib,  Seaborn, Plotly, Dash, Altair, NetworkX, Gephi
+                </b>
+            </li>
+            <li>
+                Сетевой стек
+                <b id="skills">
+                    aiohttp, socket,ssl, request, wireshark
+                </b>
+            </li>
+            <li>Остальное
+                <b id="skills">
+                    Linux, Bash, Git, Jira, Markdown, Latex, WolframMatematica, Octave, HTML5, CSS3
+                </b>
+            </li>
+        </ul>
     </div>
 </body>
