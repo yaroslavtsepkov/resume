@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8" content="UTF-8">
+    <title>HTML CV</title>
     <link rel="stylesheet" tyoe="text/css" href="style.css"></link>
 </head>
 
@@ -13,17 +15,11 @@
             <b>Data Scientist</b>
         </div>
         <div class="grid-contacts">
-            <div class="email">
-                Email: yaroslav.tsepkov@gmail.com
+            <div class="contacts">
+                Email: <a href="mailto:yaroslav.tsepkov@gmail.com">yaroslav.tsepkov@gmail.com</a>   | Phone: +79608243141
             </div>
-            <div class="github">
-                Github: <a href="https://github.com/yaroslavtsepkov">yaroslavtsepkov</a>
-            </div>
-            <div class="telegram">
-                Telegram: <a href="https://t.me/zireaelv">zireaelv</a>
-            </div>
-            <div class="phone">
-                Phone: +79608243141
+            <div class="socials">
+                Github: <a href="https://github.com/yaroslavtsepkov">yaroslavtsepkov</a> | Telegram: <a href="https://t.me/zireaelv">zireaelv</a>
             </div>
         </div>
     </div>
@@ -32,70 +28,67 @@
     <div class="education">
         <!-- Master -->
         <h2>Образование</h2>
-        <div class="university-name">
-            Самарский университет
+        <div class = "grid-experience">
+            <div class="company">
+                Самарский университет
+            </div>
+            <div class="date">
+                Август 2020 - Август 2022
+            </div>
         </div>
-        </div class="degree">
-            Магистр
-        </div>
-        <div class="specialisation">
-            Факультет информатики. Прикладная математика и информатика.
+        <b class="degree">Магистр</b>
+        <p class="introduction">
+            Факультет информатики.<br/>
+            Прикладная математика и информатика.<br/>
             Разработка интелектуальных систем. 
-        </div>
+        </p>
 
         <!-- Bachelor -->
-        <div class="university-name">
-            Самарский университет
+        <div class = "grid-experience">
+            <div class="company">
+                Самарский университет
+            </div>
+            <div class="date">
+                Август 2016 - Август 2020
+            </div>
         </div>
-        </div class="degree">
-            Бакалавр
-        </div>
-        <div class="specialisation">
-            Факультет математики. Прикладная математика и информатика.
+        <b class="degree">Бакалавр</b>
+        <p class="introduction">
+            Факультет математики.<br/>
+            Прикладная математика и информатика.<br/>
             Системный анализ. 
+        </p>
+    </div>
+    <!-- Experience CV -->
+    <h2>Опыт работы</h2>
+    <!-- Сбербанк -->
+    <div class = "grid-experience">
+        <div class="company">
+            Cбербанк
+        </div>
+        <div class="date">
+            Март 2021 - Август 2021
         </div>
     </div>
-
-    <!-- Experience CV -->
-    <div class="grid-experience">
-        <h2>Опыт работы</h2>
-        <!-- Сбербанк -->
-        <div class=experience-name-work>
-            <h3>Сбербанк</h3>
-        </div>
-        <div class="location-date">
-            Самара
-        </div>
-        <div class="level">
-            Старший аудитор
-        </div>
-        <div class=experience-work-date>
-            <p id=start-date>2020-03-13</p>
-            <p id=end-date>2021-08-26</p>
-        </div>
-        <div class="container-body-list">
-            <ul>
-                <li>Выгрузки данных из различных источников с использование различных диалектов SQL</li>
-                <li>Очистка и маскирование данных с использованием regex и расстояния Ливенштейна</li>
-                <li>Проведение анализа с использованием графовой теории. Построение графов связей и процессов с использованием Gephi, networkx, SberPM</li>
-                <li>Исследовательские и продуктовые проекты в области машинного обучения: задачи классификации, кластеризации и поиска аномалий в данных, распознование документов, детекция объектов</li>
-                <li>Написание внутренних библиотек для будущих разработок</li>
-            </ul>
-        </div>
+    <div class="degree">Старший аудитор (Data Scientist)</div>
+    <div class="container-body-list">
+        <ul>
+            <li>Выгрузки данных из различных источников с использование различных диалектов SQL</li>
+            <li>Очистка и маскирование данных с использованием regex и расстояния Ливенштейна</li>
+            <li>Проведение анализа с использованием графовой теории. Построение графов связей и процессов с использованием Gephi, networkx, SberPM</li>
+            <li>Исследовательские и продуктовые проекты в области машинного обучения: задачи классификации, кластеризации и поиска аномалий в данных, распознование документов, детекция объектов</li>
+            <li>Написание внутренних библиотек для будущих разработок</li>
+        </ul>
         <!-- Интегра - С -->
-        <div class=experience-name-work>
-            <h3>Интегра-С</h3>
+        <div class = "grid-experience">
+            <div class="company">
+                Интегра-С
+            </div>
+            <div class="date">
+                Январь 2020 - Август 2020
+            </div>
         </div>
-        <div class="location-date">
-            Самара
-        </div>
-        <div class="level">
-            Программист
-        </div>
-        <div class=experience-work-date>
-            <p id=start-date>Январь 2020</p>
-            <p id=end-date>Август 2020</p>
-        </div>
+        <div class="degree">Программист</div>
         <div class="container-body-list">
             <ul>
                 <li>Выявление бизнес требований к приложениям.</li>
@@ -108,9 +101,11 @@
         </div>
     </div>
     <!-- Personal projects -->
+    
     <div class="project">
         <!-- BELKA -->
-        <h3>Умный дом</h3>
+        <h2>Персональные проекты</h2>
+        <div class="company">Умный дом</div>
         <div class="container-body-list">
             <p class="introduction">
                 Участие в проекте умный дом в качестве мобильного разработчика мобильного ПО
@@ -122,10 +117,10 @@
             </ul>
         </div>
         <!-- CUDA -->
-        <h3>Высокопроизводительные вычисления</h3>
+        <div class="company">Высокопроизводительные вычисления</div>
         <div class="container-body-list">
             <p class="introduction">
-                Решение задач линейной алгебры, обработки сигналов с использование технологии <b class="skills">CUDA</b>. Написание статьи на newtechaudit.
+                Решение задач линейной алгебры, обработки сигналов с использование технологии CUDA. Написание статьи на newtechaudit.
             </p>
             <ul>
                 <li>Реализация вычислений спектограммы аудиосигнала, сравнение результатов GPU и CPU</li>
@@ -134,7 +129,7 @@
             
         </div>
         <!-- Image processing -->
-        <h3>Обработка изображений</h3>
+        <div class="company">Обработка изображений</div>
         <div class="container-body-list">
             <p class="introduction">
                 Изучение библиотек для работы с изображениями и собственная реализация алгоритмов обработки изображений. Написание двух статей по этой теме на newtechaudit.
@@ -150,48 +145,48 @@
     </div>
 
     <!-- Key skills -->
-    <div class="skills">
+    <div class="key">
         <h2>Навыки</h2>
         <ul>
             <li>
                 Языки программирования 
                 <b id="skills">
-                    Python,Java,C
+                    Python, Java, C
                 </b>
             </li>
             <li>
                 Работа с данными
                 <b id="skills">
-                    Pandas,Dask,OpenCV,Spark,SQL
+                    Pandas, Dask, OpenCV, Spark, SQL
                 </b>
             </li>
             <li>
                 Машинное обучение
                 <b id="skills">
-                    SciKit ‐ learn,PyTorch,Keras
+                    SciKit‐learn, PyTorch, Keras
                 </b>
             </li>
             <li>
                 Высокопроизводительные вычисления
                 <b id="skills">
-                    CUDA,Numba,Multiprocessing,Threads
+                    CUDA, Numba, Multiprocessing, Threads
                 </b>
             </li>
             <li>
                 Визуализация
                 <b id="skills">
-                    Matplotlib,Seaborn,Plotly,Dash,Altair,NetworkX,Gephi
+                    Matplotlib,  Seaborn, Plotly, Dash, Altair, NetworkX, Gephi
                 </b>
             </li>
             <li>
                 Сетевой стек
                 <b id="skills">
-                    aiohttp,socket,ssl,request,wireshark
+                    aiohttp, socket,ssl, request, wireshark
                 </b>
             </li>
             <li>Остальное
                 <b id="skills">
-                    Linux,Bash,Git,Jira,Markdown,Latex,WolframMatematica,Octave,HTML5,CSS3
+                    Linux, Bash, Git, Jira, Markdown, Latex, WolframMatematica, Octave, HTML5, CSS3
                 </b>
             </li>
         </ul>

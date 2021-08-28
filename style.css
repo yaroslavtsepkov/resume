@@ -1,22 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+@page {
+    size: A4;
+    margin: 0;
+  }
+@media print {
+body{
+    size: A4;
+    /* change the margins as you want them to be. */
+} 
+}
+html {
+    size: A4;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h1 {
+    font-weight: 900;
+    text-align: left;
+    margin: 1% 0% 1% 0%;
+
+}
 .grid-contacts {
     display: grid;
     grid-auto-rows: auto;
     grid-auto-columns: auto;
     gap: 0;
+    text-align: justify;
 }
-.email {
+.contacts {
     grid-column: 1;
     grid-row: 1;
 }
-.telegram {
+.socials {
     grid-column: 1;
     grid-row: 2
 }
-.github {
-    grid-column: 2;
-    grid-row: 1;
+h2 {
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    font-weight: 600;
 }
-.phone {
+div {
+    font-weight: 300;
+}
+h3 {
+    margin:0%;
+    padding: 0%;
+    text-align: left;
+}
+.grid-experience {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-auto-columns: auto;
+    gap: 0;
+}
+.company{
+    font-size: 20px;
+    grid-row: 1;
+    grid-column: 1;
+    text-align: left;
+    font-weight: 600;
+}
+.date {
+    grid-row: 1;
     grid-column: 2;
-    grid-row: 2;
+    text-align: right;
+    font-weight: 200;
+    font-size: 14px;
+    font-style: italic;
+}
+.degree {
+    font-weight: 500;
+}
+.introduction {
+    padding: 0%;
+    margin: 1% 0% 0% 0%;
+}
+a {
+    color: black;
 }
