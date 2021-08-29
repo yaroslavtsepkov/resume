@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
-@page {
-    size: A4;
-    margin: 0;
-  }
+
+@page { size: auto;  margin: 0; }
 @media print {
 body{
     size: A4;
@@ -11,13 +9,19 @@ body{
 } 
 }
 html {
+    margin-top: 0.5cm;
+    margin-left: 2cm;
+    margin-right: 1cm;
+    margin-bottom: 1cm;;
+    padding: 0px;
     size: A4;
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
 }
 h1 {
-    font-weight: 900;
+    font-weight: 700;
     text-align: left;
-    margin: 1% 0% 1% 0%;
+    margin: 0;
 
 }
 .grid-contacts {
@@ -36,48 +40,65 @@ h1 {
     grid-row: 2
 }
 h2 {
-    padding-bottom: 0%;
-    margin-bottom: 0%;
+    padding: 0;
+    margin-top: 1%;
+    margin-bottom: 0;
     border-bottom-style: solid;
-    border-bottom-width: 3px;
+    border-bottom-width: 2px;
     font-weight: 600;
+    font-size: 20px;
 }
 div {
     font-weight: 300;
 }
+ul {
+    margin: 0.5%;
+}
 h3 {
-    margin:0%;
-    padding: 0%;
     text-align: left;
 }
 .grid-experience {
+    
     display: grid;
     grid-auto-rows: auto;
     grid-auto-columns: auto;
     gap: 0;
 }
 .company{
-    font-size: 20px;
+    margin-top: 0.5%;
+    font-size: 16px;
     grid-row: 1;
     grid-column: 1;
     text-align: left;
-    font-weight: 600;
+    font-weight: 500;
 }
 .date {
-    grid-row: 1;
+    grid-row: 2;
     grid-column: 2;
     text-align: right;
     font-weight: 200;
-    font-size: 14px;
+    font-size: 12px;
     font-style: italic;
 }
 .degree {
     font-weight: 500;
+    text-align: left;
+    grid-row: 2;
+    grid-column: 1;
 }
 .introduction {
     padding: 0%;
-    margin: 1% 0% 0% 0%;
+    margin: 0% 0% 0% 0%;
+}
+p {
+    text-align: justify;
+    text-indent: 20px;
+    margin: 0%;
+    padding: 0%;
 }
 a {
-    color: black;
+    color: blue;
+}
+a:active{
+    color: purple;
 }
