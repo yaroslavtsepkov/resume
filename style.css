@@ -16,7 +16,7 @@ html {
     padding: 0px;
     size: A4;
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 14px;
+    font-size: medium;
 }
 h1 {
     font-weight: 700;
@@ -102,4 +102,8 @@ a {
 }
 a:active{
     color: purple;
+}
+
+#footer_date{
+    text-align: center;
 }

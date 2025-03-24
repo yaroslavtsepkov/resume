@@ -4,147 +4,130 @@
     <title>HTML CV</title>
     <link rel="stylesheet" type="text/css" href="style.css"></link>
 </head>
-
+<script src="scripts.js"></script>
 <body>
     <!-- Header cv -->
     <div class="header-cv">
         <div class="fullname-header">
-            <h1>Цепков Ярослав Алексеевич</h1>
+            <h1>TSEPKOV IAROSLAV</h1>
         </div>
         <div class="professional-name-header">
-            <b>ML/Data Engineer</b>
+            <b>Data Engineer | Analyst</b>
         </div>
         <div class="grid-contacts">
             <div class="contacts">
-                Email: <a href="mailto:yaroslav.tsepkov@gmail.com">yaroslav.tsepkov@gmail.com</a>   | Phone: +79913961901
+                Email: <a href="mailto:yaroslav.tsepkov@gmail.com">yaroslav.tsepkov@gmail.com</a>
             </div>
             <div class="socials">
-                Github: <a href="https://github.com/yaroslavtsepkov">yaroslavtsepkov</a> | Telegram: <a href="https://t.me/zireaelv">zireaelv</a>
+                Telegram: <a href="https://t.me/Iaroslavtsepkov">Iaroslavtsepkov</a>
             </div>
         </div>
+        
     </div>
+    <!-- Describe -->
+     <div>
+        <h2>Describe</h2>
+        <div class="container-body-list">
+            <p id="description" class="description">I develop various systems for storing, processing, analyzing and visualizing systems for working with big data. In my career, I have brought several ETL\ELT systems with visualization services and user notifications, as well as monitoring systems for engineers, to the final product. I have experience in implementing systems with machine learning, implemented one video surveillance system and target object detection, as well as a system for searching for anomalies in data.</p>
+        </div>
+     </div>
+
     <!-- Education -->
 
     <div class="education">
         <!-- Master -->
-        <h2>Образование</h2>
+        <h2>Education</h2>
         <div class = "grid-experience">
             <div class="company">
-                Самарский университет
-            </div>
-            <div class="degree">
-                Магистр (незаконченное, не защищал диплом)
+                Master of Science in Samara State Aerospace University
             </div>
             <div class="date">
-                Август 2020 - Февраль 2023
+                August 2020 - February 2023
             </div>
         </div>
         
         <p class="introduction">
-            Факультет информатики. Прикладная математика и информатика.<br/>
-            Разработка интелектуальных систем. 
+            Faculty of Computer Science. Applied Mathematics and Computer Science.<br/>
+            Development of intelligent systems. Big data, Machine learning, HPC, statistics, distributed databases.
         </p>
 
         <!-- Bachelor -->
         <div class = "grid-experience">
             <div class="company">
-                Самарский университет
-            </div>
-            <div class="degree">
-                Бакалавриат
+                Bachelor of Science in Samara State University
             </div>
             <div class="date">
-                Август 2016 - Август 2020
+                August 2016 - August 2020
             </div>
         </div>
         <p class="introduction">
-            Факультет математики. Прикладная математика и информатика.<br/>
-            Системный анализ. 
+            Faculty of Mathematics. Applied Mathematics and Computer Science.<br/>
+            Systems analysis. Include courses statistics, c-lang, python, algorithms and data structs, OS, databases.
         </p>
     </div>
     <!-- Experience CV -->
-    <h2>Опыт работы</h2>
+    <h2>Experience</h2>
     <!-- pepsico -->
     <div class = "grid-experience">
         <div class="company">
-            PepsiCo (проектная занятость)
+            PepsiCo (self employed)
         </div>
         <div class="degree">Data Engineer</div>
         <div class="date">
-            Декабрь 2022 - Июнь 2023
+            January 2023 - August 2024
         </div>
     </div>
-    <div class="container-body-list">
+    <div class="container-body-list">   
         <ul>
-            <li>Разработка ETL системы электронной комерции (ECOM)</li>
-            <li>Проектирование озера данных на базе Azure Blob Storage, и базы данных MSSQL</li>
-            <li>Разработка скриптов сборщиков данных Python+Pyspark</li>
-            <li>Настройка конвееров данных с использова Azure Data Factory</li>
-            <li>Выявление потребностей бизнеса</li>
+            <li>Implemented and developed a ELT system for collecting and processing data for the e-commerce department using the cloud provider Azure and Databricks on Azure. Configured monitoring and alerting services for the data system. Using the Azure data factory, configured all execution pipelines using DAGs. Together with analysts, I identified requirements for the system, and together we developed a system of requirements for data quality.</li>
+            <li>Used stack Azure ecosystem (Azure Databricks, Azure SQL, Azure KeyVault, Azure Data Factory, Azure BlobStorage) and Python + pySpark</li>
         </ul>
     <!-- end pepsico -->
     <!-- xim  -->
     <div class = "grid-experience">
         <div class="company">
-            Xim inc.
+            Xim inc. (self employed)
         </div>
         <div class="degree">Data Engineer</div>
         <div class="date">
-            Январь 2022 - по настоящее время
+            February 2022 - March 2024
         </div>
     </div>
     <div class="container-body-list">
         <ul>
-            <li>Поддержка текущей ETL системы. Обновление API сборщиков данных, оптимизация процессов. Написание новых сборщиков данных по API, email, GCS, S3.</li>
-            <li>Работа с BigQuery, ClickHouse. Написание моделей и макросов для DBT.</li>
-            <li>Проектирование новой ETL системы.</li>
-            <li>Работа с экосистемой Google Cloud Platform.</li>
-            <li>Работа с различными API сторонних сервисов ( MyTarget, Yandex, Google Ads, Yahoo, Apple Search, ... )</li>
-            <li>Работа c данными медиаций и appsflyer.</li>
-            <li>Работа с BI инструментами Grafana, Datastudio</li>
-            <li>Подджерка текущей ETL системы и помощь в проектировние новой</li>
-            <li>Разработка модулей по сбору данных различных нетворков используя API сервисов. Поддержка текущих модулей.</li>
-            <li>Формирование витрин данных аналитикам для построения отчетов</li>
+            <li>Support of the current ETL system. Updating the API of data collectors, optimizing processes. Implementation of new data collectors for API, email, GCS, S3. Implementation of models and macros for DBT. Formation of data marts for analysts to build reports and execute ad hoc queries. Implemented more than 40 partners with daily data. Set up cloud storage for partners who uploaded their data there. Administered Google cloud, tracked roles and access to data in the cloud. Formed more than 20 new data marts. Executed ad hoc queries to generate certain reports according to requirements. Supported interactive reporting in Redash and Looker Studio.</li>
+            <li>Used Google Cloud and S3. Working with BigQuery, ClickHouse, Postgres, Prometheus databases. Using Python and Pandas\Dask + Streamlit for backend and frontend ETL system. I have experience with work many APIs for ad providers like a Google Ad, Apple Search, MyTarget. Working with mediation data and appsflyer. Working with BI tools Grafana, Looker (Data Studio), Redash</li>
         </ul>
     <!-- end xim -->
     <!-- Сбербанк -->
     <div class = "grid-experience">
         <div class="company">
-            СБЕР
+            Sber
         </div>
-        <div class="degree">Старший аудитор (Data Scientist)</div>
+        <div class="degree">Senior Auditor (Data Scientist)</div>
         <div class="date">
-            Март 2021 - Август 2021
+            January 2021 - December 2021
         </div>
     </div>
     
     <div class="container-body-list">
         <ul>
-            <li>Выгрузки данных из различных источников с использование различных диалектов SQL</li>
-            <li>Очистка и маскирование данных с использованием regex и расстояния Ливенштейна</li>
-            <li>Проведение анализа с использованием графовой теории. Построение графов связей и процессов с использованием Gephi, networkx, SberPM</li>
-            <li>Исследовательские и продуктовые проекты в области машинного обучения: задачи классификации, кластеризации и поиска аномалий в данных, распознование документов, детекция объектов</li>
-            <li>Написание внутренних библиотек для будущих разработок</li>
+            <li>Working with various data warehouses Oracle, MS SQL Server, Terradata and others. Cleaning and masking data using regex and Levenshtein distance. Conducting analysis using graph theory. Building graphs of connections and processes using Gephi, networkx, SberPM. Research and implemented projects in the field of machine learning: problems of classification, clustering and searching for anomalies in data, document recognition, object detection. Developed internal libraries for future developments.</li>
         </ul>
         <!-- Интегра - С -->
         <div class = "grid-experience">
             <div class="company">
-                Интегра-С
+                Integra-S
             </div>
-            <div class="degree">Программист</div>
+            <div class="degree">Software developer</div>
             <div class="date">
-                Январь 2020 - Август 2020
+                January 2020 - December 2020
             </div>
         </div>
        
         <div class="container-body-list">
             <ul>
-                <li>Выявление бизнес требований к приложениям.</li>
-                <li>Помощь в разработке дизайна. Преимущественно работа с векторной графикой.</li>
-                <li>Написание тонкого клиента для мобильных приложений iOS/Android.</li>
-                <li>Работа с REST API, написание документации к ПО.</li>
-                <li>Работа с потоковым видеосигналом RTSP.</li>
-                <li>Поиск оптимальной модели для детекции объектов на видео для серверной части.</li>
+                <li>Identifying business requirements for applications. Developed a mobile application for a video surveillance system for Android devices. Together with the designer, we discussed and updated the design of the application. Working with REST API, writing software documentation. Working with RTSP streaming video signal. Reasearch an Optimal Model for Object Detection in Video for the Server Side.</li>
             </ul>
         </div>
     </div>
@@ -152,96 +135,101 @@
     
     <div class="project">
         <!-- BELKA -->
-        <h2>Персональные проекты</h2>
-        <div class="company">Умный дом</div>
+        <h2>PET projects</h2>
+        <div class="company">BELKA (smart house)</div>
         <div class="container-body-list">
             <p class="description">
-                Участие в проекте умный дом в качестве мобильного разработчика. Разработка мобильного клиента на iOS, разработка архитектуры базы данных.
+                Participation in the smart home project as a mobile developer. Development of a mobile client on iOS, development of database architecture.
             </p>
         </div>
         <!-- CUDA -->
-        <div class="company">Высокопроизводительные вычисления</div>
+        <div class="company">High Performance Computing</div>
         <div class="container-body-list">
             <p class="description">
-                Решение задач линейной алгебры, обработки сигналов с использование технологии CUDA. Написание статьи на newtechaudit: <a href="https://newtechaudit.ru/cuda-v-reshenii-prikladnyh-zadach/">Использование технологии CUDA в решении прикладных задач</a>.
+                Solving problems of linear algebra, signal processing using CUDA technology. Writing an article on newtechaudit: <a href="https://newtechaudit.ru/cuda-v-reshenii-prikladnyh-zadach/">Using CUDA technology in solving applied problems</a>.
         </div>
         <!-- Image processing -->
-        <div class="company">Обработка изображений</div>
+        <div class="company">Image processing</div>
         <div class="container-body-list">
             <p class="description">
-                Изучение библиотек для работы с изображениями и собственная реализация алгоритмов обработки изображений. Написание двух статей по этой теме на newtechaudit: 
+                Studying image libraries and implementing image processing algorithms myself. Writing two articles on this topic on newtechaudit: 
                 <a href="https://newtechaudit.ru/analiz-i-obrabotka-izobrazhenij/">
-                Анализ и обработка изображений с использованием операций математической морфологии</a> и <a href="https://newtechaudit.ru/razrabotka-desh-s-streamlit/">Разработка аналитических веб-приложений с использованием библиотеки Streamlit</a>
+                    Image analysis and processing using mathematical morphology operations</a> и <a href="https://newtechaudit.ru/razrabotka-desh-s-streamlit/">Developing Analytics Web Applications Using the Streamlit Library</a>
             </p>
         </div>
     </div>
 
     <!-- Key skills -->
     <div class="key">
-        <h2>Навыки</h2>
+        <h2>Skills</h2>
         <ul>
             <li>
-                Языки программирования 
+                programming languages
                 <b id="skills">
-                    Python, Java (EE 8 stack),Scala (only spark framework).
+                    Python, Bash.
                 </b>
             </li>
             <li>
-                СУБД с которыми работал
+                databases
                 <b id="skills">
-                    BigQuery, ClickHouse, MSSQL, Oracle Database, Postgres.
+                    BigQuery, ClickHouse, MS SQL server, Oracle, Postgres, Kafka, Prometheus.
                 </b>
             </li>
             <li>
-                Форматы с которыми работал
+                containers
                 <b id="skills">
-                    Parquet,Avro,ORC,JSON,YAML,MD,Protobuf.
+                    Docker, Docker-Compose, K8S
                 </b>
             </li>
             <li>
-                Работа с данными
+                data formats
                 <b id="skills">
-                    Pandas, Dask, OpenCV, Spark, PyArrow.
+                    Parquet, Avro, ORC, Delta tables, JSON, YAML, MD, Protobuf.
                 </b>
             </li>
             <li>
-                Машинное обучение и глубокое обучение
+                data transform
                 <b id="skills">
-                    SciKit‐learn, PyTorch, XGboost, Keras.
+                    Pandas, Dask, Spark, DBT, Azure Data Factory.
                 </b>
             </li>
             <li>
-                Высокопроизводительные вычисления
+                machine learning
+                <b id="skills">
+                    SciKit‐learn, Xgboost, Keras
+                </b>
+            </li>
+            <li>
+                high computing 
                 <b id="skills">
                     CUDA, Numba, Multiprocessing, Threads, Concurrent, Async.
                 </b>
             </li>
             <li>
-                Визуализация
+                visualisation
                 <b id="skills">
-                    Plotly, Dash, Altair, NetworkX, Gephi.
+                    Looker (Data studio), Redash, Yandex Lens, Plotly, Dash, Altair, NetworkX, Gephi.
                 </b>
             </li>
             <li>
-                Облачные платформы
+                cloud computing
                 <b id="skills">
-                    Google Cloud Platform (BigQuery,Cloud Storage),
+                    Google Cloud Platform (BigQuery, Cloud Storage, Looker, GooglePlay),
                     Azure (MSSQL, Blob Storage, Data Factory, Databricks, Key Vault),
                     Amazon (S3 bucket)
                 </b>
             </li>
-            <li>
-                Сетевой стек
+            <li>workflow
                 <b id="skills">
-                    socket.io, ssl, request, selenium, oauth2, rtsp.
+                    git, jira, confluence, gitlab, bitbucket, markdown.
                 </b>
             </li>
-            <li>Остальное
+            <li>web
                 <b id="skills">
-                    Linux, Bash, Git, Jira, Markdown, Latex, WolframMatematica, GNU Octave, HTML5, CSS3,
-                    Azure DevOps, BitBucket, Gitlab, Githab.
+                    html5, css3, streamlit, fastapi
                 </b>
             </li>
         </ul>
     </div>
 </body>
+
